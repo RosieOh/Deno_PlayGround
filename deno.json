@@ -1,0 +1,14 @@
+{
+  "name": "dino-api-example",
+  "version": "1.0.0",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --watch main.ts",
+    "start": "deno run --allow-net --allow-read main.ts"
+  },
+  "imports": {
+    "@std/http": "jsr:@std/http@^1.0.0"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  }
+}
