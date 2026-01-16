@@ -1,12 +1,11 @@
 {
-  "name": "dino-api-example",
+  "name": "dino-board-api",
   "version": "1.0.0",
+  "exports": "./src/main.ts",
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --watch main.ts",
-    "start": "deno run --allow-net --allow-read main.ts"
-  },
-  "imports": {
-    "@std/http": "jsr:@std/http@^1.0.0"
+    "dev": "deno run --allow-net --allow-read --watch src/main.ts",
+    "start": "deno run --allow-net --allow-read src/main.ts",
+    "check": "deno check src/main.ts"
   },
   "compilerOptions": {
     "lib": ["deno.window"]
